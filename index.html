@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frontend Mentor Challenge">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Ping coming soon page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c7b56c1faa.js"
+    crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+  <header>
+    <button
+      class="header__theme"
+      aria-label="Theme switcher"
+    >
+      <img src="images/icon-moon.png"
+        class="theme__icon" 
+        alt=""
+        width="256"
+        height="256"
+      >
+      <img src="images/icon-sun.png"
+        class="theme__icon hidden"
+        alt=""
+        width="256"
+        height="256"
+      >
+    </button>
+    <h1>
+      <a href="#">
+        <img src="images/logo.svg"
+          class="header__logo"
+          alt="Ping logo, will direct to the home page"
+          width="86"
+          height="26"
+        >
+      </a>
+    </h1>
+  </header>
+
+  <main class="info">
+    <h2 class="info__title">
+      <span>We are launching</span> soon!
+    </h2>
+    <p class="info__subtitle">
+      Subscribe and get notified
+    </p>
+    <form action="#" class="info__form" novalidate autocomplete="off">
+      <label for="form__email" class="sr-only">
+        Please enter your email address to subscribe
+      </label>
+      <input
+        type="email"
+        class="form__email"
+        id="form__email"
+        name="Email"
+        minlength="8"
+        maxlength="40"
+      >
+      <p class="form__message"></p>
+      <button
+        type="submit"
+        class="form__btn"
+        aria-label="Send your email address to get notified"
+      >
+        Notify Me
+      </button>
+      <p class="form__ty">
+        <span>Thanks for subscribing!</span>
+        Check your email for further instructions.
+      </p>
+    </form>
+    <img src="images/illustration-dashboard.png"
+      class="info__mockup"
+      alt=""
+      width="1280"
+      height="782"
+    >
+  </main>
+
+  <footer>
+    <h2 class="sr-only">Social media</h2>
+    <ul class="footer__icons">
+      <li>
+        <a href="#" aria-label="facebook" class="fa-brands fa-facebook-f"></a>
+      </li>
+      <li>
+        <a href="#" aria-label="twitter" class="fa-brands fa-twitter"></a>
+      </li>
+      <li>
+        <a href="#" aria-label="instagram" class="fa-brands fa-instagram"></a>
+      </li>
+    </ul>
+    <p class="footer__copy">
+      &copy; Copyright Ping. All rights reserved.
+    </p>
+
+    <div class="attribution">
+      <button
+        type="button"
+        class="attr__btn"
+        title="Show attribution information"
+        aria-label="Show attribution information"
+        aria-expanded="false"
+      >
+        <img src="images/icon-arrow.svg"
+          alt=""
+          width="32"
+          height="32"
+        >
+      </button>
+      <p class="attr__info">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          title="Open Frontend Mentor site in a new tab"
+          aria-label="Open Frontend Mentor site in a new tab"
+        >
+          Frontend Mentor.</a><br>
+        Coded by
+        <a href="https://www.frontendmentor.io/profile/fernandolapaz"
+          title="Fernando's Frontend Mentor profile"
+          aria-label="Fernando's Frontend Mentor profile"
+        >
+          Fernando.</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
