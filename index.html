@@ -51,9 +51,9 @@
     <p class="info__subtitle">
       Subscribe and get notified
     </p>
-    <form action="#" class="info__form" novalidate autocomplete="off">
-      <label for="form__email" class="sr-only">
-        Please enter your email address to subscribe
+    <form action="#" class="info__form" novalidate>
+      <label for="form__email" class="form__label sr-only">
+        Enter your email address to subscribe
       </label>
       <input
         type="email"
@@ -62,8 +62,9 @@
         name="Email"
         minlength="8"
         maxlength="40"
+        required
       >
-      <p class="form__message"></p>
+      <p class="form__message" id="form__message"></p>
       <button
         type="submit"
         class="form__btn"
