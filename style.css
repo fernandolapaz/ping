@@ -64,7 +64,7 @@ select {
 
 /* Accessibility */
 *:focus-visible {
-    outline: 0.25rem solid orange;
+    outline: 0.25rem dashed orange;
     outline-offset: 0.15rem;
 }
 
